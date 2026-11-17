@@ -4,7 +4,7 @@
 Help prospective undergraduate students discover universities, compare a shortlist and create an editable preparation pathway. Keep the product welcoming, practical and easy to extend. Do not imply guaranteed admission or present planning suggestions as official deadlines.
 
 ## Architecture
-This is a dependency-free static website. `dist/` is the deployable website, not generated output. Edit it directly. `dist/index.html` provides semantic page structure, `dist/style.css` contains design tokens and responsive layouts, `dist/data.js` contains university records, and `dist/app.js` contains interactions. GitHub Pages deploys `dist/` through `.github/workflows/pages.yml`. `.openai/hosting.json` configures Sites hosting. `README.md` explains operation and `SUBMISSION.md` is the hand-in draft.
+This is a dependency-free static website. `dist/` is the deployable website, not generated output. Edit it directly. `dist/index.html` provides semantic page structure, `dist/style.css` contains design tokens and responsive layouts, `dist/data.js` contains university records, and `dist/app.js` contains interactions. GitHub Pages deploys `dist/` through `.github/workflows/pages.yml`. `.openai/hosting.json` configures Sites hosting. `README.md` explains operation.
 
 ## Design and content
 Use warm off-white backgrounds, forest-green text and pale green accents. Reuse CSS variables in `:root`. Headings use Playfair Display with Georgia fallback; body uses DM Sans with sans-serif fallback. Maintain the numbered Explore / Compare / Plan sequence. Use encouraging, concise English, no rankings or invented testimonials. Keep controls accessible with labels, keyboard focus, descriptive button names and sufficient contrast. Mobile layouts must work at 375px without body overflow. Tables may scroll within their own container.
@@ -31,4 +31,4 @@ Use localStorage key `eduai-v1` for saved university IDs, plan inputs and comple
 7. Run `node --check dist/app.js` and `node --check dist/data.js`; preview with `python3 -m http.server 4173 --directory dist`.
 
 ## Publishing
-Only deploy reviewed files in dist. Do not place secrets, personal student details or local storage exports in Git. Preserve hosting IDs and use the authorized GitHub repository. Update SUBMISSION.md with verified repository and live URLs after deployment. Do not claim tests or publication succeeded without evidence.
+Only deploy reviewed files in dist. Do not place secrets, personal student details or local storage exports in Git. Preserve hosting IDs and use the authorized GitHub repository. Report verified repository and live URLs after deployment. Do not claim tests or publication succeeded without evidence.

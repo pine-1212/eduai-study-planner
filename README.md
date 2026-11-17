@@ -20,7 +20,6 @@ There is no build or installation step. Optional web fonts have system fallbacks
 - `dist/data.js`: university content and official citations
 - `dist/app.js`: filtering, comparison, profiles and planner
 - `AGENTS.md`: reusable development and content rules
-- `SUBMISSION.md`: project description and submission draft
 - `.github/workflows/pages.yml`: GitHub Pages deployment
 
 ## Extend
